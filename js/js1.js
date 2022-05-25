@@ -1,0 +1,26 @@
+let picWidth = 1440;
+for(var i=0; i<3; i++){
+    document.getElementById("pic" + i).style.left = (picWidth * i) + "px";
+}
+
+let moveNum = 0;
+document.getElementById("prev_btn").onclick = function(){
+    if(moveNum > 0){
+        moveNum--;  
+    } else {
+        moveNum = 2;
+    }
+    for(var i=0; i<3; i++){
+        document.getElementById("pic" + i).style.left = (1440 * (i-moveNum)) + "px";
+    }
+}
+document.getElementById("next_btn").onclick = function(){
+    if(moveNum < 2){
+        moveNum++;  
+    } else {
+        moveNum = 0;
+    }
+    for(var i=0; i<3; i++){
+        document.getElementById("pic" + i).style.left = (1440 * (i-moveNum)) + "px";
+    }
+}

@@ -1,0 +1,5 @@
+* {margin: 0; padding: 0;}
+h2 {text-align: center; margin: 30px;}
+button {margin: 20px; width: 60px; height: 40px;}
+#picSet {width: 1440px; height: 540px; position: relative; overflow: hidden; margin: 0 auto;}
+#picSet img {position: absolute; top: 0; transition: left 1s;}
